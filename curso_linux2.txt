@@ -1,0 +1,91 @@
+nano é um editor de texto de fácil uso.
+
+Para iniciarmos a edição de um arquivo devemos colocar:
+nano nome_arquivo.txt 
+
+^ = control 
+
+control + opção = comandos
+
+por exemplo: 
+
+^+G = (control+G)
+
+alt + u = desfaz 
+alt + u + e = refaz 
+
+cat + nome_arquivo.txt = visualizar arquivo
+
+tac + nome_arquivo.txt = visualizar arquivo com inversão
+
+head + nome_arquivo.txt = mostra apenas as 10 primeiras linhas 
+
+tail + nome_arquivo.txt = mostra apenas as 10 últimas linhas
+
+tail + nome_arquivo.txt > novo_nome.txt = cria novo arquivo
+
+head + nome_arquivo.txt > novo_nome.txt = cria novo arquivo 
+
+cal = mostra calendáio do mês corrente 
+
+cal > calendario_julho.txt = cria copia de calendario 
+
+date  = mostra a data
+
+date >> calendario_julho.txt = mostra calendario + date
+
+cal 2020 = calendario inteiro
+
+cal 2020 > calendario_julho.txt = substituir 
+
+mv calendario_julho.txt calendario_2020.txt = renomeia
+
+cal julho 2020  >> maio.txt = retorna a adição de maio ao cal julho 2020
+
+tail distros.txt | grep Linux = procura a palavra dentro desse arquivo
+ 
+esse comando é um exemplo de utilização de dois comandos simultaneamente separados pelo | pipe 
+
+grep = busca palavra em determinado
+
+cat distros.txt >> teste.txt
+
+cat distros2.txt >> teste.txt
+
+cat maio.txt >> teste.txt
+
+cat teste.txt | more = faz uma paginação no arquivo
+
+cat teste.txt | less = faz uma paginação com : 
+
+cat teste.txt & cat calendario_2020.txt = mostra dois arquivos separados por terminal
+
+cat teste.txt && cat calendario_2020.txt = mostra os dois por consecutivamente, sem pausa
+
+&& = utilizar dois comandos ao mesmo tempo 
+
+file nome_arquivo.txt = mostra o tipo do arquivo
+
+whatis file = diz o que faz determinado comando
+
+find ~name teste.txt = traz o caminho desse determinado comando
+
+
+Exercícios de Revisão
+1) Crie uma pasta de nome Exercícios e Acesse a mesma
+2) Crie um arquivo vazio de nome lista_nomes.txt
+3) Abra este arquivo com o Editor Nano
+4) Digite 20 Nomes de Pessoas Conhecidas incluindo o seu, pulando de linha para cada nome inserido.
+5) Salve o arquivo
+6) Exiba os 10 primeiros Nomes da Lista
+7) Exiba os 10 ultimos Nomes da Lista
+8) Procure no texto o seu nome
+9) Crie um Arquivo chamado setembro.txt com a saida do comando cal.
+10) Adicione o conteúdo do arquivo setembro.txt ao arquivo lista_nomes.txt
+11) Exiba o arquivo lista_nomes.txt com paginação
+12) Exiba o caminho do arquivos setembro.txt
+13) Exiba o tipo do arquivo lista_nomes.txt
+14) Exiba a explicação do comando ls
+15) Renomeie o Arquivo lista_nomes.txt para arquivo.txt
+16) Limpe o Terminal
+17) Saia do Terminal

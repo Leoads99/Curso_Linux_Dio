@@ -1,0 +1,193 @@
+Fundamentos de Rede: 
+
+A internet é uma grande rede de computadores, essa rede é separada em pequenas redes, assim como a de nossas casas.
+
+
+"Rede de computadores é um conjunto de equipamentos interligados de maneira a trocarem informações e compartilharem recursos,  como arquivos de dados gravados, impressoras , modems, softwares e outros equipamentos". (Sousa, 1999)
+
+
+Nós são pontos de rede. 
+
+Rede Wan: 
+
+Wide Area Network ou World Area Network é uma rede geograficamente distribuída (uma rede continental ou mundial) . 
+
+Rede Man: 
+
+Metropolitan Area Network é uma rede metropolitana que interligam várias redes locais (englobam e interligam cidades). 
+
+Rede Lan: 
+
+Local Area Network é uma rede local de uma forma geral em um único prédio ou csmpus. 
+
+Protocolos 
+
+Tradutores entre uma rede e outra. 
+
+
+Protocolo é a "linguagem " usada pelos dispositivos de uma rede de modo que consigam se entender (Torres, 2004). 
+
+Existem vários protocolos 
+
+Voip = voz sobre o ip 
+
+IP - Protocolo de internet - Endereço IP - números que
+identificam seu computador em uma rede 
+
+ICMP - (Internet Control Message Protocol) tem por 
+objetivo prover mensagens de controle na comunicação entre nós 
+
+DNS - Domain Name Server - esse protocolo de 
+aplicação tem por função identificar endereços IP e 
+manter uma tabela com os endereços dos caminhos de algumas redes.
+
+Interface de rede é um software e/ou hardware que
+faz comunicação em uma rede de computadores.
+
+As interfaces de rede no Linux estão localizadas no
+diretório /dev e a maioria é criada dinamicamente
+pelos softwares quando são requisitadas.
+
+Exemplo: eth0 - Placa de rede Ethernet - cabeada
+
+A interface loopback é um tipo especial de interface
+que permite fazer conexões com você mesmo, com
+ela, você pode testar vários programas de redes sem
+interferir em sua rede padrão, o endereço IP 127.0.0.1
+foi escolhido para loopback.
+
+Comand ifconfig:
+
+Faz parte de um pacote chamado net-tools
+
+é preciso instalar 
+
+Quando o comando ifconfig é executado temos o seguinte resultado:
+
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        ether 02:42:8a:b9:4f:79  txqueuelen 0  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp1s0f1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 08:97:98:62:4a:7b  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Loopback Local)
+        RX packets 3215  bytes 374831 (374.8 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3215  bytes 374831 (374.8 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.12  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::756e:5c88:6713:7460  prefixlen 64  scopeid 0x20<link>
+        ether a4:63:a1:02:9a:aa  txqueuelen 1000  (Ethernet)
+        RX packets 71222  bytes 85489769 (85.4 MB)
+        RX errors 0  dropped 367  overruns 0  frame 0
+        TX packets 27619  bytes 4650933 (4.6 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Mostra a interface de rede
+Inet = ipv4
+Inet6 = ipv6
+Ether = endereço da placa de rede 
+
+o = endereço local 
+
+dig:
+Informações sobre DNS
+DNS = SERVIÇO DE NOME DE DOMÍNIOS
+TRANSFORMA O IP PARA O WWW
+
+hostname = nome do nosso computador na rede, o nome do host
+
+hostaname - I:
+Comando para descobrir o endereço ip do nosso host 
+
+hostname - i:
+Para exibir o endereço de Loopback do nosso host
+
+
+who:
+Como nós estamos logados nessa rede 
+
+whoami:
+Nome de como estamos logados 
+
+ping:
+Faz parte do protocolo ICMP, envia mensagens de controle para determinado host verificando se o host está ativo ou inativo 
+
+Ping = pacote de requisições e recebemos a resposta "pong" 
+
+Ping --help
+
+Comando traceroute 
+
+Para ver o DNS do site é só usar 
+
+dig www.google.com +short
+
+whois www.google.com = mais informações do host
+
+Comando Finger 
+
+sudo apt install finger
+
+finger exibe informações do usuário que está logado
+
+------------------------COMANDOS----------------------------------------------
+
+ifconfig = exibe informações sobre interface de rede e IP
+
+hostname = exibe informações sobre o Host
+
+hostname -i = exibe o número de endereço loopback do host
+
+hostname -I = exibe o endereço de IP na rede
+
+dig host = exibe informações sobre o DNS de um host
+
+dig host +short = exibe o numero de IP de um host
+
+w = exibe informações detalhadas sobre o usuário do computador na rede 
+
+who = exibe informações curtas sobre o usuário do computador na rede
+
+whoami = exibe o nome do usuário do computador na rede 
+
+traceroute host = exibe informações sobre a rota da sua até o host desejado
+
+ping host = testa um host
+
+finger = exibe informações sobre o usuário do computador 
+
+
+
+Exercícios Práticos
+1) Crie um arquivo de aularedes.txt
+2) Exiba o número de IP da rede no terminal
+3) Adicione a saída do comando anterior ao arquivo aula redes.txt
+4) Exiba o número de IP Loopback no terminal
+5) Adicione a saída do comando anterior ao arquivo aula redes.txt
+6) Exiba Informações DNS sobre o host www.pudim.com.br
+7) Adicione a saída do comando anterior ao arquivo aula redes.txt
+8) Exiba Informações do Usuário logado na rede
+9) Adicione a saída do comando anterior ao arquivo aula redes.txt
+10) Execute um teste no host www.pudim.com.br com 6 pacotes
+11) Adicione a saída do comando anterior ao arquivo aula redes.txt
+12) Trace a Rota do seu computador até o host www.pudim.com.br
+13) Adicione a saída do comando anterior ao arquivo aula redes.txt
+14) Exiba Informações sobre Interfaces de Rede e Endereços IP no terminal
+15) Adicione a saída do comando anterior ao arquivo aula redes.txt
+16) Limpe o terminal
+17) Imprima o arquivo aularedes.txt com paginação no terminal

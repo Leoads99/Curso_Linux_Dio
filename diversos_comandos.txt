@@ -1,0 +1,78 @@
+Diversos Comandos LINUX
+
+
+O comando history -c limpa o histórico
+
+alias dá um nickname para determinado comando
+
+exemplo:
+alias hh='history'
+
+para contar o número de linhas
+é so dar um nl
+nl aularedes.txt
+wc -l aularedes.txt também faz isso
+ele conta as linhas em brancos também, e o wc -w aularedes.txt conta o número de palavras
+wc -w aularedes.txt
+ls -a exibe os arquivos ocultos
+ls -a
+ls -F coloca uma barra na frente de todos os diretórios
+
+comparação de arquivos cmp aularedes.txt vazio.txt
+cmp aularedes.txt vazio.txt
+diff aularedes.txt vazio.txt
+nano vazio.txt
+cat vazio.txt
+sort -n organiza a saída do arquivo em ordem númerica
+sort -n vazio.txt
+
+last reboot 
+mostra todas as informações de reinicialização do sistema
+last reboot
+route -n
+mostra todas as tabelas de roteamento do nosso kernel
+route -n
+time
+mostra o tempo de um processo
+time traceroute www.google.com.br
+mostra o tempo de processamento de um processo etc. 
+uptime mostra o tempo que o sistema está rodando
+uptime
+estes precisam ser instalados
+sudo apt install cowsay
+cowsay "Linux é bom"
+cowsay -d "Linux"
+cowsay -g "Linux"
+cowsay -f "Linux"
+cowsay -f tux "Linux"
+cowsay -f vader "Linux"
+cowsay -f vader-koala "Linux"
+cowsay -f dragon "Linux"
+xcowsay
+sudo apt install xcowsay
+xcowsay também precisa installar
+xcowsay "lINUX"
+cmatrix precisa ser instalado
+sudo apt install cmatrix
+cmatrix
+
+comandos para desligar a máquina
+init 0
+telinit 0 
+halt
+halt pede autenticação para desligar a máquina
+seq 
+imprime uma sequencia de números
+seq 1 10 > vazio
+
+logout = finaliza sessão 
+
+whereis = exibe o caminho do programa e seu manual
+
+which = exibe o caminho de um programa
+
+wc -c = exibe o número de bytes de um arquivo
+
+wc -w = exibe o número de palavras de um arquivo
+
+https://bellard.org/jslinux/

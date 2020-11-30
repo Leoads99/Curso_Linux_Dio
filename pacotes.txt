@@ -1,0 +1,67 @@
+Gerenciamento de Pacotes
+--------------------------------------------------
+
+Pacotes são programas colocados dentro de um 
+arquivo identificados por sua extensão, e incluem
+arquivos necessários para a instalação de programa.
+
+Existem pacotes com a extensão .deb .rpm e outros
+
+Gerenciadores 
+--------------------------------------------------
+Gerenciadores de Pacotes são sistemas que possuem 
+resolução automática de dependências entre pacotes,
+método fácil de instalação de pacotes. 
+
+Exemplo de gerenciadores:
+
+dpkg, apt , yum e rpm
+
+apt 
+
+sudo apt install pacote
+
+sudo apt install nmap 
+
+Para realizar uma atualização:
+
+apt 
+
+sudo apt upgrade pacote
+
+precisa de elevação de SUDO
+apt remove pacote
+
+Atualização de sistemas
+
+apt update && apt upgrade
+
+Sites de Pacotes
+
+pkgs.org
+
+rpm.pbone.net
+
+Instalação
+
+dpkg
+
+Uso:
+
+sudo dpkg -i
+
+Para instalar pacotes:
+
+sudo dpkg -i nomedopacote 
+
+Descrição do Pacotes:
+
+dpkg 
+
+sudo dpkg -I pacote.deb
+
+Remoção:
+
+dpkg 
+
+sudo dpkg -r nomedopacote

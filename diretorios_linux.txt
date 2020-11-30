@@ -1,0 +1,58 @@
+/ = diretório raiz no Linux
+/bin/ = binários 
+/boot/ = arquivos do sistema de boot
+/dev/ = arquivos de dispositivos
+/etc/ = arquivos de configuração de sistema
+/home/ = diretório de usuários comuns, todos os usuários ficam aqui
+/lib/ = bibliotecas essenciais e módulos do kernel
+/media/ = diretório de montagem e dispositivos
+/mnt/ = dispositivos montados, tipo pen-drive, hd
+/opt/ = inserção de programas não oficiais da distro ou por conta do usuário (fica a parte do sistema)
+/sbin/ = armazena executáveis 
+/srv/ = diretório de serviços do sistema 
+/tmp/ = diretório de arquivos temporários 
+/usr/ = diretório de usuários comuns e programas
+/var/ = variáveis geradas pelos programas
+/root/ = diretório do usuário root (Administrador)
+/proc/ = diretório virtual controlado pelo Kernel, info de memória e info de cpu
+
+lspci = o comando que mostra todos os Hardwares pci
+
+lsusb = lista os dispositivos usb
+
+lscpu = informações de cpu
+
+lshw | more = lista de Hardwares
+
+lshw-short = lista de Hardwares reduzidamente
+
+arch = mostra a arquiquetura do kernel
+
+uname = nome do Kernel
+
+uname -r = versão do kernel
+
+uname -m = arquiquetura do kernel
+
+free = mostra informações de memória 
+
+du -h ~ = mostra o quanto de memória está sendo utilizada pelo diretório pessoal
+
+echo = um tipo de print
+
+echo -e "Olá, mundo\n" = print com quebra de linha
+
+human readable = leitura facilitada para o humano
+
+cat /etc/passwd/ | more = mostra todos usuários do sistema
+
+cat /proc/cpuinfo/ = arquivo de informações do processador  
+
+reboot =  comando para reiniciar o sistema
+
+shutdown     -h               now
+opção para desligar máquina + tempo
+
+shutdown --help
+opção para verificar ajuda
+

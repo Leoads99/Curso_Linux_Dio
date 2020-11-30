@@ -1,0 +1,121 @@
+usuários e permissões
+
+root = o que mais tem permissões 
+
+
+para adicionar outro usuários
+
+sudo adduser nomedousuario
+
+
+para trocar de usuário
+
+su nomedousuario
+
+para alterar a senha do usuario
+
+passwd nomedousuario
+
+método 
+
+ZENIT 
+POLAR
+
+lastlog
+
+informações de login dos últimos usuários
+
+last 
+exibe a listagem de entrada e saída do user
+
+lognamme
+nome do user logado
+
+exibe todos os identificadores do user
+id
+
+exibir todos os users
+cat /etc/passwd
+
+remover um user e a pasta pessoal
+
+userdel -r nomedousuario
+
+nao remove a pasta pessoal
+
+userdel -r nomedousuario
+
+Grupos permitem organizar os usuários e definir as permissões de acesso a arquivos e diretórios de forma mais fácil
+
+cat /etc/group = exibir todos os grupos do sistema 
+
+groups = diz a que grupo eu pertenço 
+
+addgroup = criar grupo 
+
+adduser usuario grupo = adiciona um user a um grupo 
+
+gpasswd -a usuariogrupo = também adiciona um usuárioao grupo
+
+gpasswd -d usuariogrupo = remover um usuário de um grupo 
+
+groupdel grupo = remover um grupo 
+
+cat /etc/group | grep teste = procura esse grupo em todo arquivo group
+
+permissões servem tanto para arquivos quanto para diretórios
+
+para restringir acessos como: leitura, escrita e execução
+
+3 tipos:
+r -read (leitura)
+w = write (escrita)
+e = execution(execução)                                        
+ls -lh = verificar permissões em um diretório
+d = diretório
+- = arquivo
+
+dono / grp / outros esta é a hierarquia das permissões
+
+chmod muda a permissão de um arquivo ou diretório 
+
+r = 4, w = 2, x = 1
+sistema octal quando se trata de permissões
+
+o mais alto nível de permissão é o 777 
+
+---------------------------RESUMO---------------------------
+
+adduser = adiciona um usuário 
+
+sudo su = troca pro usuário root
+
+su usuário = troca para outro usuário
+
+passwd = troca senha do usuário
+
+laslog = exibe informações do Login dos usuários
+
+last = exibe uma listagem de entrada e saída do usuário no sistema
+
+logname = exibe o nome do usuário atual logado no sistema 
+
+id = exibe todos os identificadores do usuário
+
+cat /etc/passwd = exibe todos os usuários
+
+userdel -r nomedousuario = remove o usuário e sua pasta pessoal
+
+cat /etc/group = exibe todos os grupos do sistema
+
+adduser usuario grupo = adiciona um usuario a um grupo
+
+gpasswd -a usuariogrupo = adiciona um usuario a um grupo 
+
+gpasswd -d usuariogrupo = remove um usuario a um grupo
+
+groupdel grupo = remove um grupo 
+
+ls -lh = lista as permissões
+
+chmod = permite a alteração de permissões
