@@ -1,0 +1,21 @@
+dpkg -i instala um pacote deb
+
+dpkg -r remove um pacote deb 
+
+dpkg -I informações do pacote deb
+
+rpm
+
+rpm -ivh
+
+rpm -U
+
+rpm -e
+
+yum
+
+yum install
+
+yum update 
+
+yum remove
